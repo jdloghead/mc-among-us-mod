@@ -1,0 +1,395 @@
+{
+  "mod_elements": [
+    {
+      "name": "Crewmate",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crewmate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/among_us_mod/models/item/crewmate_spawn_egg.json",
+          "src/main/java/net/mcreator/amongusmod/client/renderer/CrewmateRenderer.java",
+          "src/main/java/net/mcreator/amongusmod/entity/CrewmateEntity.java",
+          "src/main/resources/data/among_us_mod/forge/biome_modifier/crewmate_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Imposter",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imposter_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/amongusmod/entity/ImposterEntity.java",
+          "src/main/java/net/mcreator/amongusmod/client/renderer/ImposterRenderer.java",
+          "src/main/resources/assets/among_us_mod/models/item/imposter_test_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "TheSkeld",
+      "type": "dimension",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_skeld",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/resources/assets/among_us_mod/blockstates/the_skeld_portal.json",
+          "src/main/java/net/mcreator/amongusmod/world/dimension/TheSkeldDimension.java",
+          "src/main/resources/assets/among_us_mod/models/item/the_skeld.json",
+          "src/main/java/net/mcreator/amongusmod/world/teleporter/TheSkeldTeleporter.java",
+          "src/main/java/net/mcreator/amongusmod/block/TheSkeldPortalBlock.java",
+          "src/main/resources/assets/among_us_mod/models/block/the_skeld_portal_ew.json",
+          "src/main/resources/assets/among_us_mod/models/block/the_skeld_portal_ns.json",
+          "src/main/resources/data/among_us_mod/dimension_type/the_skeld.json",
+          "src/main/resources/data/among_us_mod/dimension/the_skeld.json",
+          "src/main/java/net/mcreator/amongusmod/item/TheSkeldItem.java",
+          "src/main/java/net/mcreator/amongusmod/world/teleporter/TheSkeldPortalShape.java"
+        ]
+      }
+    },
+    {
+      "name": "ImpostersKnife",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imposters_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/amongusmod/item/ImpostersKnifeItem.java",
+          "src/main/resources/assets/among_us_mod/models/item/imposters_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "SusLands",
+      "type": "biome",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_lands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/worldgen/configured_feature/sus_lands_tree.json",
+          "src/main/resources/data/among_us_mod/worldgen/placed_feature/sus_lands_tree.json",
+          "src/main/resources/data/among_us_mod/worldgen/biome/sus_lands.json"
+        ]
+      }
+    },
+    {
+      "name": "SusShard",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/amongusmod/item/SusShardItem.java",
+          "src/main/resources/assets/among_us_mod/models/item/sus_shard.json"
+        ]
+      }
+    },
+    {
+      "name": "SkeldWarpActivator",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeld_warp_activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/recipes/skeld_warp_activator.json"
+        ]
+      }
+    },
+    {
+      "name": "ImposterSkeld",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imposter_skeld",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/amongusmod/client/renderer/ImposterSkeldRenderer.java",
+          "src/main/resources/data/among_us_mod/forge/biome_modifier/imposter_skeld_biome_modifier.json",
+          "src/main/java/net/mcreator/amongusmod/entity/ImposterSkeldEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "AmongUsMod",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us_mod",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SusPortalFrame",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_portal_frame",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/loot_tables/blocks/sus_portal_frame.json",
+          "src/main/resources/assets/among_us_mod/models/item/sus_portal_frame.json",
+          "src/main/resources/assets/among_us_mod/blockstates/sus_portal_frame.json",
+          "src/main/java/net/mcreator/amongusmod/block/SusPortalFrameBlock.java",
+          "src/main/resources/assets/among_us_mod/models/block/sus_portal_frame.json"
+        ]
+      }
+    },
+    {
+      "name": "GetImposterKnife",
+      "type": "achievement",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_imposter_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/advancements/get_imposter_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "KillCrewmate",
+      "type": "achievement",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_crewmate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/advancements/kill_crewmate.json"
+        ]
+      }
+    },
+    {
+      "name": "ImposterBoss",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imposter_boss",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/forge/biome_modifier/imposter_boss_biome_modifier.json",
+          "src/main/java/net/mcreator/amongusmod/entity/ImposterBossEntity.java",
+          "src/main/java/net/mcreator/amongusmod/client/renderer/ImposterBossRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TheFinal",
+      "type": "dimension",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_final",
+      "metadata": {
+        "ep": true,
+        "files": [
+          "src/main/resources/data/among_us_mod/dimension_type/the_final.json",
+          "src/main/resources/assets/among_us_mod/blockstates/the_final_portal.json",
+          "src/main/java/net/mcreator/amongusmod/block/TheFinalPortalBlock.java",
+          "src/main/resources/data/among_us_mod/dimension/the_final.json",
+          "src/main/java/net/mcreator/amongusmod/item/TheFinalItem.java",
+          "src/main/java/net/mcreator/amongusmod/world/dimension/TheFinalDimension.java",
+          "src/main/resources/assets/among_us_mod/models/block/the_final_portal_ew.json",
+          "src/main/resources/assets/among_us_mod/models/item/the_final.json",
+          "src/main/java/net/mcreator/amongusmod/world/teleporter/TheFinalTeleporter.java",
+          "src/main/java/net/mcreator/amongusmod/world/teleporter/TheFinalPortalShape.java",
+          "src/main/resources/assets/among_us_mod/models/block/the_final_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "TheFinalBiome",
+      "type": "biome",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_final_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/worldgen/placed_feature/the_final_biome_tree.json",
+          "src/main/resources/data/among_us_mod/worldgen/configured_feature/the_final_biome_tree.json",
+          "src/main/resources/data/among_us_mod/worldgen/biome/the_final_biome.json"
+        ]
+      }
+    },
+    {
+      "name": "AmongUs",
+      "type": "achievement",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "among_us",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/advancements/among_us.json"
+        ]
+      }
+    },
+    {
+      "name": "EnterSusLands",
+      "type": "achievement",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_sus_lands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/advancements/enter_sus_lands.json"
+        ]
+      }
+    },
+    {
+      "name": "ImposterBossNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imposter_boss_natural_entity_spawning_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/amongusmod/procedures/ImposterBossNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SusBlock",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sus_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/among_us_mod/models/block/sus_block.json",
+          "src/main/resources/assets/among_us_mod/models/item/sus_block.json",
+          "src/main/resources/assets/among_us_mod/blockstates/sus_block.json",
+          "src/main/java/net/mcreator/amongusmod/block/SusBlockBlock.java",
+          "src/main/resources/data/among_us_mod/loot_tables/blocks/sus_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Susportalrecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "susportalrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us_mod/recipes/susportalrecipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "sus.imposter.death",
+      "files": [
+        "cft_loop"
+      ],
+      "category": "neutral",
+      "subtitle": "GETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUT"
+    }
+  ],
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BEDROCK",
+      "~Blocks.IRON_BLOCK",
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabamong_us_mod": "Among Us Mod",
+      "advancements.kill_crewmate.title": "They might think your the Imposter!",
+      "advancements.enter_sus_lands.title": "Enter the Skeld Dimention",
+      "biome.sussy_custom_mob.sus_lands": "Sus Lands",
+      "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
+      "advancements.enter_sus_lands.descr": "Enter The Skeld Dimention",
+      "item.sussy_custom_mob.crewmate_spawn_egg": "Crewmate Spawn Egg",
+      "advancements.kill_crewmate.descr": "Kill a Crewmate and pickup their Sus Shard.",
+      "advancements.get_imposter_knife.title": "Journey\u0027s End",
+      "item.among_us_mod.the_skeld": "The Skeld Warp Activater",
+      "item.sussy_custom_mob.the_skeld": "The Skeld Warp Activater",
+      "entity.sussy_custom_mob.crewmate": "Crewmate",
+      "item.among_us_mod.the_final": "The Final Portal Igniter",
+      "advancements.get_imposter_knife.descr": "Kill an imposter and pick up the Knife.",
+      "item.among_us_mod.sus_shard": "Sus Shard",
+      "block.among_us_mod.sus_portal_frame": "Sus Portal Frame",
+      "item.sussy_custom_mob.sus_shard": "Sus Shard",
+      "item_group.among_us_mod.among_us_mod": "Among Us Mod",
+      "item.among_us_mod.imposters_knife": "Imposter\u0027s Knife",
+      "advancements.among_us.descr": "Advancements For Among Us Mod",
+      "item.among_us_mod.imposter_test_spawn_egg": "Imposter Spawn Egg",
+      "item.among_us_mod.crewmate_spawn_egg": "Crewmate Spawn Egg",
+      "advancements.among_us.title": "Among Us",
+      "biome.among_us_mod.sus_lands": "Sus Lands",
+      "entity.sussy_custom_mob.imposter": "Imposter",
+      "item.sussy_custom_mob.imposter_skeld_spawn_egg": "Imposter Skeld Spawn Egg",
+      "subtitles.sus.imposter.death": "GETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUT",
+      "item.sussy_custom_mob.imposters_knife": "Imposter\u0027s Knife",
+      "entity.among_us_mod.imposter_skeld": "Imposter Skeld",
+      "entity.among_us_mod.imposter_test": "Imposter",
+      "block.among_us_mod.sus_block": "Sus Block",
+      "entity.among_us_mod.imposter_boss": "Imposter Boss",
+      "entity.among_us_mod.crewmate": "Crewmate",
+      "biome.among_us_mod.the_final_biome": "The Final Biome",
+      "block.sussy_custom_mob.sus_portal_frame": "Sus Portal Frame",
+      "item.sussy_custom_mob.imposter_spawn_egg": "Imposter Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "among_us_mod",
+    "modName": "Among Us Mod",
+    "version": "1.0.0",
+    "description": "Sussy mod",
+    "author": "jdloghead",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "modPicture": "682169-among-us-ipad-front-cover",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "jdloghead",
+    "modElementsPackage": "net.mcreator.amongusmod"
+  },
+  "mcreatorVersion": 202400118518
+}

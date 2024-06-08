@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "amongus:sus_lands",
+  "spawners": {
+    "type": "amongus:imposter_skeld",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "amongus:block/the_skeld_portal_ew"
+    },
+    "axis=x": {
+      "model": "amongus:block/the_skeld_portal_ns"
+    }
+  }
+}

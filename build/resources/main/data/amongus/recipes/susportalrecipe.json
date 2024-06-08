@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "amongus:sus_block"
+    }
+  },
+  "result": {
+    "item": "amongus:sus_portal_frame",
+    "count": 1
+  }
+}

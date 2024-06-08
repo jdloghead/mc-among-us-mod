@@ -7,29 +7,32 @@
         "value": "CUSTOM:SusLands"
       }
     ],
-    "worldGenType": "End like gen",
+    "worldGenType": "Normal world gen",
     "mainFillerBlock": {
       "value": "Blocks.BEDROCK"
     },
     "fluidBlock": {
-      "value": "Blocks.AIR"
+      "value": "Blocks.LAVA"
     },
     "canRespawnHere": false,
     "hasFog": true,
     "isDark": true,
-    "doesWaterVaporize": false,
+    "doesWaterVaporize": true,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "ImposterBossNaturalEntitySpawningCondition"
+    },
     "portalFrame": {
       "value": "CUSTOM:SusPortalFrame"
     },
     "portalParticles": {
-      "value": "CRIT"
+      "value": "SMOKE_LARGE"
     },
     "portalLuminance": 0,
     "portalSound": {
-      "value": "block.portal.ambient"
+      "value": "CUSTOM:sus.imposter.death"
     },
     "enableIgniter": true,
     "igniterName": "The Final Portal Igniter",

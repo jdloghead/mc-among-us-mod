@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "amongus:the_skeld"
+    },
+    "title": {
+      "translate": "advancements.enter_sus_lands.title"
+    },
+    "description": {
+      "translate": "advancements.enter_sus_lands.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "enter_sus_lands_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "amongus:the_skeld"
+      }
+    }
+  },
+  "parent": "amongus:among_us"
+}

@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#is_overworld",
-  "features": "among_us_mod:sus_portal_frame",
-  "step": "underground_ores"
-}

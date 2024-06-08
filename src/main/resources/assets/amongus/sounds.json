@@ -1,0 +1,11 @@
+{
+  "sus.imposter.death": {
+    "subtitle": "subtitles.sus.imposter.death",
+    "sounds": [
+      {
+        "name": "amongus:cft_loop",
+        "stream": false
+      }
+    ]
+  }
+}

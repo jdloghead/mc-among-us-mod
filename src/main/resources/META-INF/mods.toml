@@ -1,21 +1,21 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Academic Free License v3.0"
+license="MIT License"
 
 [[mods]]
-modId="among_us_mod"
-version="1.0.0"
+modId="amongus"
+version="1.1.0"
 displayName="Among Us Mod"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 credits="jdloghead"
 authors="jdloghead"
-description="Sussy mod"
+description="sussy mod i made for some reason idk guess i was bored"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.among_us_mod]]
+[[dependencies.amongus]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
