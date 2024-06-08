@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "among_us_mod:blocks/sus_portal_frame",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "among_us_mod:sus_portal_frame"
+        }
+      ]
+    }
+  ]
+}

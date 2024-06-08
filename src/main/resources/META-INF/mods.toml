@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="among_us_mod"
+version="1.0.0"
+displayName="Among Us Mod"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="jdloghead"
+authors="jdloghead"
+description="Sussy mod"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.among_us_mod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+

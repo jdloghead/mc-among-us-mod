@@ -1,0 +1,32 @@
+{
+  "_fv": 60,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "knife",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Imposter's Knife",
+    "specialInformation": {
+      "fixedValue": [
+        "Knife used by the Imposter himself. Very Overpowered."
+      ]
+    },
+    "creativeTab": {
+      "value": "CUSTOM:AmongUsMod"
+    },
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.5,
+    "enchantability": 2,
+    "damageVsEntity": 498.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}
