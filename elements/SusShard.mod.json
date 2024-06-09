@@ -8,9 +8,9 @@
     "customProperties": {},
     "states": [],
     "name": "Sus Shard",
-    "rarity": "EPIC",
+    "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:AmongUsMod"
     },
     "stackSize": 12,
     "enchantability": 0,
@@ -31,11 +31,17 @@
         "Sussy Shard!!!1!"
       ]
     },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": false,
     "shootConstantly": false,
+    "projectile": {
+      "value": "Arrow"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

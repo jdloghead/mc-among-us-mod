@@ -25,22 +25,21 @@ public class AmongUsModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.among_us.among_us_mod")).icon(() -> new ItemStack(AmongUsModItems.IMPOSTERS_KNIFE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(AmongUsModItems.CREWMATE_SPAWN_EGG.get());
 				tabData.accept(AmongUsModItems.IMPOSTERS_KNIFE.get());
+				tabData.accept(AmongUsModItems.SUS_SHARD.get());
 				tabData.accept(AmongUsModBlocks.SUS_PORTAL_FRAME.get().asItem());
 				tabData.accept(AmongUsModItems.IMPOSTER_BOSS_SPAWN_EGG.get());
 				tabData.accept(AmongUsModBlocks.SUS_BLOCK.get().asItem());
 				tabData.accept(AmongUsModItems.SUS_PICKAXE.get());
 				tabData.accept(AmongUsModItems.SUS_GEM.get());
+				tabData.accept(AmongUsModItems.CREEPY.get());
 			})
 
 					.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			tabData.accept(AmongUsModItems.SUS_SHARD.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(AmongUsModItems.THE_SKELD.get());
-			tabData.accept(AmongUsModItems.THE_FINAL.get());
 		}
 	}
 }

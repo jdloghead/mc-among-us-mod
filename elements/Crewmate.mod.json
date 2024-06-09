@@ -103,7 +103,7 @@
       "value": "CUSTOM:SusShard"
     },
     "livingSound": {
-      "value": "block.amethyst_block.break"
+      "value": "ambient.cave"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"

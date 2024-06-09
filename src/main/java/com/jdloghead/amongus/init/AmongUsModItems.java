@@ -14,11 +14,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import com.jdloghead.amongus.item.TheSkeldItem;
-import com.jdloghead.amongus.item.TheFinalItem;
 import com.jdloghead.amongus.item.SusShardItem;
 import com.jdloghead.amongus.item.SusPickaxeItem;
 import com.jdloghead.amongus.item.SusGemItem;
 import com.jdloghead.amongus.item.ImpostersKnifeItem;
+import com.jdloghead.amongus.item.CreepyItem;
 import com.jdloghead.amongus.AmongUsMod;
 
 public class AmongUsModItems {
@@ -29,10 +29,10 @@ public class AmongUsModItems {
 	public static final RegistryObject<Item> SUS_SHARD = REGISTRY.register("sus_shard", () -> new SusShardItem());
 	public static final RegistryObject<Item> SUS_PORTAL_FRAME = block(AmongUsModBlocks.SUS_PORTAL_FRAME);
 	public static final RegistryObject<Item> IMPOSTER_BOSS_SPAWN_EGG = REGISTRY.register("imposter_boss_spawn_egg", () -> new ForgeSpawnEggItem(AmongUsModEntities.IMPOSTER_BOSS, -65536, -13369396, new Item.Properties()));
-	public static final RegistryObject<Item> THE_FINAL = REGISTRY.register("the_final", () -> new TheFinalItem());
 	public static final RegistryObject<Item> SUS_BLOCK = block(AmongUsModBlocks.SUS_BLOCK);
 	public static final RegistryObject<Item> SUS_PICKAXE = REGISTRY.register("sus_pickaxe", () -> new SusPickaxeItem());
 	public static final RegistryObject<Item> SUS_GEM = REGISTRY.register("sus_gem", () -> new SusGemItem());
+	public static final RegistryObject<Item> CREEPY = REGISTRY.register("creepy", () -> new CreepyItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

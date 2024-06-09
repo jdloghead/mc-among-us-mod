@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SusShardItem extends Item {
 	public SusShardItem() {
-		super(new Item.Properties().stacksTo(12).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(12).fireResistant().rarity(Rarity.COMMON));
 	}
 
 	@Override

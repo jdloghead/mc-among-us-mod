@@ -10,8 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -32,7 +30,7 @@ import com.jdloghead.amongus.init.AmongUsModEntities;
 
 public class ImposterEntity extends Monster {
 	public ImposterEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(AmongUsModEntities.IMPOSTER_TEST.get(), world);
+		this(AmongUsModEntities.IMPOSTER_CHEATER.get(), world);
 	}
 
 	public ImposterEntity(EntityType<ImposterEntity> type, Level world) {
@@ -40,7 +38,7 @@ public class ImposterEntity extends Monster {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Imposter"));
+		setCustomName(Component.literal("§k Imposter"));
 		setCustomNameVisible(true);
 		setPersistenceRequired();
 	}
@@ -53,18 +51,14 @@ public class ImposterEntity extends Monster {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 10, true) {
+		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1000, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, CrewmateEntity.class, true, false));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ImposterBossEntity.class, true, false));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, true, false));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true));
+		this.goalSelector.addGoal(3, new FloatGoal(this));
 	}
 
 	@Override
@@ -75,6 +69,11 @@ public class ImposterEntity extends Monster {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
 	}
 
 	@Override
@@ -98,7 +97,7 @@ public class ImposterEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 500);
+		builder = builder.add(Attributes.MAX_HEALTH, 1000);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

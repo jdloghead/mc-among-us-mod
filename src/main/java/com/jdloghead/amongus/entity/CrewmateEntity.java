@@ -80,7 +80,7 @@ public class CrewmateEntity extends PathfinderMob {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.break"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave"));
 	}
 
 	@Override

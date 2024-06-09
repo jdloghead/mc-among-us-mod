@@ -29,7 +29,7 @@ public class AmongUsModEntities {
 			EntityType.Builder.<CrewmateEntity>of(CrewmateEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrewmateEntity::new)
 
 					.sized(0.6f, 1.7f));
-	public static final RegistryObject<EntityType<ImposterEntity>> IMPOSTER_TEST = register("imposter_test",
+	public static final RegistryObject<EntityType<ImposterEntity>> IMPOSTER_CHEATER = register("imposter_cheater",
 			EntityType.Builder.<ImposterEntity>of(ImposterEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ImposterEntity::new)
 
 					.sized(0.6f, 1.7f));
@@ -59,7 +59,7 @@ public class AmongUsModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(CREWMATE.get(), CrewmateEntity.createAttributes().build());
-		event.put(IMPOSTER_TEST.get(), ImposterEntity.createAttributes().build());
+		event.put(IMPOSTER_CHEATER.get(), ImposterEntity.createAttributes().build());
 		event.put(IMPOSTER_SKELD.get(), ImposterSkeldEntity.createAttributes().build());
 		event.put(IMPOSTER_BOSS.get(), ImposterBossEntity.createAttributes().build());
 	}

@@ -7,5 +7,22 @@
         "stream": false
       }
     ]
+  },
+  "cheater": {
+    "subtitle": "subtitles.cheater",
+    "sounds": [
+      {
+        "name": "among_us:cheater",
+        "stream": false
+      }
+    ]
+  },
+  "creepymusic": {
+    "sounds": [
+      {
+        "name": "among_us:music_him",
+        "stream": true
+      }
+    ]
   }
 }

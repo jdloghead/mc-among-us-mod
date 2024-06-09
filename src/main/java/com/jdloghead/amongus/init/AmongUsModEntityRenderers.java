@@ -19,7 +19,7 @@ public class AmongUsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(AmongUsModEntities.CREWMATE.get(), CrewmateRenderer::new);
-		event.registerEntityRenderer(AmongUsModEntities.IMPOSTER_TEST.get(), ImposterRenderer::new);
+		event.registerEntityRenderer(AmongUsModEntities.IMPOSTER_CHEATER.get(), ImposterRenderer::new);
 		event.registerEntityRenderer(AmongUsModEntities.IMPOSTER_SKELD.get(), ImposterSkeldRenderer::new);
 		event.registerEntityRenderer(AmongUsModEntities.IMPOSTER_BOSS.get(), ImposterBossRenderer::new);
 	}
