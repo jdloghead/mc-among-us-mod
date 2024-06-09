@@ -16,6 +16,6 @@ public class ImposterSkeldRenderer extends MobRenderer<ImposterSkeldEntity, Cree
 
 	@Override
 	public ResourceLocation getTextureLocation(ImposterSkeldEntity entity) {
-		return new ResourceLocation("amongus:textures/entities/imposter.png");
+		return new ResourceLocation("among_us:textures/entities/imposter.png");
 	}
 }

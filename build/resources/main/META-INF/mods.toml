@@ -3,8 +3,8 @@ loaderVersion="[47,)"
 license="MIT License"
 
 [[mods]]
-modId="amongus"
-version="1.1.0"
+modId="among_us"
+version="1.0.0"
 displayName="Among Us Mod"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
@@ -15,7 +15,7 @@ description="sussy mod i made for some reason idk guess i was bored"
 # Start of user code block mod configuration
 # End of user code block mod configuration
 
-[[dependencies.amongus]]
+[[dependencies.among_us]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"

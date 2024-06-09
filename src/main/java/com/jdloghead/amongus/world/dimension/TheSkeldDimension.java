@@ -29,7 +29,7 @@ public class TheSkeldDimension {
 					return true;
 				}
 			};
-			event.register(new ResourceLocation("amongus:the_skeld"), customEffect);
+			event.register(new ResourceLocation("among_us:the_skeld"), customEffect);
 		}
 	}
 }

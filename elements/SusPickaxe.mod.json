@@ -15,17 +15,21 @@
     "creativeTab": {
       "value": "CUSTOM:AmongUsMod"
     },
-    "harvestLevel": 1,
-    "efficiency": 100.0,
-    "attackSpeed": 5.0,
-    "enchantability": 0,
+    "harvestLevel": 4,
+    "efficiency": 1000.0,
+    "attackSpeed": 50.0,
+    "enchantability": 50,
     "damageVsEntity": 0.0,
     "usageCount": 500,
     "blocksAffected": [],
     "glowCondition": {
       "fixedValue": true
     },
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:SusGem"
+      }
+    ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false

@@ -16,6 +16,6 @@ public class ImposterBossRenderer extends MobRenderer<ImposterBossEntity, Creepe
 
 	@Override
 	public ResourceLocation getTextureLocation(ImposterBossEntity entity) {
-		return new ResourceLocation("amongus:textures/entities/imposter.png");
+		return new ResourceLocation("among_us:textures/entities/imposter.png");
 	}
 }

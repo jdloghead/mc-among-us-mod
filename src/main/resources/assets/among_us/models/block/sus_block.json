@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "among_us:block/amogusportal",
+    "up": "among_us:block/amogusportal",
+    "north": "among_us:block/amogusportal",
+    "east": "among_us:block/amogusportal",
+    "south": "among_us:block/amogusportal",
+    "west": "among_us:block/amogusportal",
+    "particle": "among_us:block/amogusportal"
+  },
+  "render_type": "solid"
+}

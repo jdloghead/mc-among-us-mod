@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:beacon"
+    },
+    "b": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "c": {
+      "item": "minecraft:diamond"
+    },
+    "d": {
+      "item": "minecraft:golden_apple"
+    },
+    "e": {
+      "item": "minecraft:enchanting_table"
+    }
+  },
+  "result": {
+    "item": "among_us:sus_gem",
+    "count": 1
+  }
+}

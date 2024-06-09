@@ -51,7 +51,7 @@
     },
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "temperature": 0.0,
     "spawnBiome": false,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
@@ -124,7 +124,16 @@
           "value": "CUSTOM:Crewmate"
         },
         "minGroup": 4,
-        "maxGroup": 4,
+        "maxGroup": 10,
+        "weight": 50,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:ImposterSkeld"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
         "weight": 20,
         "spawnType": "ambient"
       }

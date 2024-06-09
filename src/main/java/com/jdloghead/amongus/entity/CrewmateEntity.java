@@ -31,12 +31,12 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import com.jdloghead.amongus.init.AmongusModItems;
-import com.jdloghead.amongus.init.AmongusModEntities;
+import com.jdloghead.amongus.init.AmongUsModItems;
+import com.jdloghead.amongus.init.AmongUsModEntities;
 
 public class CrewmateEntity extends PathfinderMob {
 	public CrewmateEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(AmongusModEntities.CREWMATE.get(), world);
+		this(AmongUsModEntities.CREWMATE.get(), world);
 	}
 
 	public CrewmateEntity(EntityType<CrewmateEntity> type, Level world) {
@@ -75,7 +75,7 @@ public class CrewmateEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(AmongusModItems.SUS_SHARD.get()));
+		this.spawnAtLocation(new ItemStack(AmongUsModItems.SUS_SHARD.get()));
 	}
 
 	@Override
@@ -99,7 +99,7 @@ public class CrewmateEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(AmongusModEntities.CREWMATE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(AmongUsModEntities.CREWMATE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
 	}
 

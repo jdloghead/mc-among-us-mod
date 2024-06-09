@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "among_us:blocks/sus_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "among_us:sus_block"
+        }
+      ]
+    }
+  ]
+}

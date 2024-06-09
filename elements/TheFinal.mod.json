@@ -18,12 +18,9 @@
     "hasFog": true,
     "isDark": true,
     "doesWaterVaporize": true,
-    "sleepResult": "ALLOW",
+    "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false,
-    "onPlayerEntersDimension": {
-      "name": "ImposterBossNaturalEntitySpawningCondition"
-    },
     "portalFrame": {
       "value": "CUSTOM:SusPortalFrame"
     },

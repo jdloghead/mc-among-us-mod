@@ -16,6 +16,6 @@ public class CrewmateRenderer extends MobRenderer<CrewmateEntity, CreeperModel<C
 
 	@Override
 	public ResourceLocation getTextureLocation(CrewmateEntity entity) {
-		return new ResourceLocation("amongus:textures/entities/crewmate.png");
+		return new ResourceLocation("among_us:textures/entities/crewmate.png");
 	}
 }

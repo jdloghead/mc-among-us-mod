@@ -23,7 +23,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
@@ -31,11 +30,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import com.jdloghead.amongus.init.AmongusModEntities;
+import com.jdloghead.amongus.init.AmongUsModEntities;
 
 public class ImposterSkeldEntity extends Monster {
 	public ImposterSkeldEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(AmongusModEntities.IMPOSTER_SKELD.get(), world);
+		this(AmongUsModEntities.IMPOSTER_SKELD.get(), world);
 	}
 
 	public ImposterSkeldEntity(EntityType<ImposterSkeldEntity> type, Level world) {
@@ -95,8 +94,7 @@ public class ImposterSkeldEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(AmongusModEntities.IMPOSTER_SKELD.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		SpawnPlacements.register(AmongUsModEntities.IMPOSTER_SKELD.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

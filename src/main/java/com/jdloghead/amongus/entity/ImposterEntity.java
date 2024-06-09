@@ -28,11 +28,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import com.jdloghead.amongus.init.AmongusModEntities;
+import com.jdloghead.amongus.init.AmongUsModEntities;
 
 public class ImposterEntity extends Monster {
 	public ImposterEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(AmongusModEntities.IMPOSTER_TEST.get(), world);
+		this(AmongUsModEntities.IMPOSTER_TEST.get(), world);
 	}
 
 	public ImposterEntity(EntityType<ImposterEntity> type, Level world) {
@@ -89,7 +89,7 @@ public class ImposterEntity extends Monster {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("amongus:sus.imposter.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("among_us:sus.imposter.death"));
 	}
 
 	public static void init() {

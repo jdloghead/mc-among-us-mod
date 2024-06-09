@@ -1,18 +1,20 @@
 package com.jdloghead.amongus.procedures;
 
+import net.minecraftforge.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.api.distmarker.Dist;
 
 import javax.annotation.Nullable;
 
-import com.jdloghead.amongus.AmongusMod;
+import com.jdloghead.amongus.AmongUsMod;
 
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.DEDICATED_SERVER})
 public class ModStartProcedure {
 	@SubscribeEvent
-	public static void onWorldLoad(net.minecraftforge.event.level.LevelEvent.Load event) {
-		execute(event);
+	public static void init(FMLDedicatedServerSetupEvent event) {
+		execute();
 	}
 
 	public static void execute() {
@@ -20,6 +22,6 @@ public class ModStartProcedure {
 	}
 
 	private static void execute(@Nullable Event event) {
-		AmongusMod.LOGGER.info("things are gonna get a BIT sussy here if you know what i mean ;)");
+		AmongUsMod.LOGGER.info("things are about get a BIT sussy here if you know what i mean ;)");
 	}
 }

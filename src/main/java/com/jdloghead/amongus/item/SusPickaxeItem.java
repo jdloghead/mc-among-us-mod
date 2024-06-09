@@ -10,6 +10,8 @@ import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
+import com.jdloghead.amongus.init.AmongUsModItems;
+
 public class SusPickaxeItem extends PickaxeItem {
 	public SusPickaxeItem() {
 		super(new Tier() {
@@ -18,7 +20,7 @@ public class SusPickaxeItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 100f;
+				return 1000f;
 			}
 
 			public float getAttackDamageBonus() {
@@ -26,17 +28,17 @@ public class SusPickaxeItem extends PickaxeItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {
-				return 0;
+				return 50;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.of(new ItemStack(AmongUsModItems.SUS_GEM.get()));
 			}
-		}, 1, 1f, new Item.Properties().fireResistant());
+		}, 1, 46f, new Item.Properties().fireResistant());
 	}
 
 	@Override

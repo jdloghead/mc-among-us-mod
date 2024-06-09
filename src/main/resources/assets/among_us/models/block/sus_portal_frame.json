@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "among_us:block/portalframe",
+    "up": "among_us:block/portalframe",
+    "north": "among_us:block/portalframe",
+    "east": "among_us:block/portalframe",
+    "south": "among_us:block/portalframe",
+    "west": "among_us:block/portalframe",
+    "particle": "among_us:block/portalframe"
+  },
+  "render_type": "solid"
+}
