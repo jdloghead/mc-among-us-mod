@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:bedrock",
+    "minecraft:lava",
     "minecraft:iron_block",
     "minecraft:dirt",
     "minecraft:grass_block"

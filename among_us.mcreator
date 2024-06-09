@@ -26,6 +26,7 @@
       "metadata": {
         "files": [
           "src/main/java/com/jdloghead/amongus/entity/ImposterEntity.java",
+          "src/main/resources/data/among_us/forge/biome_modifier/imposter_cheater_biome_modifier.json",
           "src/main/java/com/jdloghead/amongus/client/renderer/ImposterRenderer.java"
         ]
       }
@@ -359,50 +360,35 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
     },
     {
-      "name": "Creepy",
-      "type": "item",
+      "name": "CheaterLands",
+      "type": "dimension",
       "sortid": 30,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "creepy",
+      "registry_name": "cheater_lands",
       "metadata": {
         "files": [
-          "src/main/resources/assets/among_us/models/item/creepy.json",
-          "src/main/java/com/jdloghead/amongus/item/CreepyItem.java"
+          "src/main/java/com/jdloghead/amongus/world/dimension/CheaterLandsDimension.java",
+          "src/main/resources/data/among_us/dimension/cheater_lands.json",
+          "src/main/resources/data/among_us/dimension_type/cheater_lands.json"
         ]
       }
     },
     {
-      "name": "NoCheating",
+      "name": "CheaterLandsPlayerEntersDimension",
       "type": "procedure",
       "sortid": 31,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "no_cheating",
+      "registry_name": "cheater_lands_player_enters_dimension",
       "metadata": {
         "files": [
-          "src/main/java/com/jdloghead/amongus/procedures/NoCheatingProcedure.java"
+          "src/main/java/com/jdloghead/amongus/procedures/CheaterLandsPlayerEntersDimensionProcedure.java"
         ],
         "dependencies": [
           {
@@ -429,15 +415,17 @@
       }
     },
     {
-      "name": "Cheater",
-      "type": "achievement",
+      "name": "CheaterBiome",
+      "type": "biome",
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "cheater",
+      "registry_name": "cheater_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/among_us/advancements/cheater.json"
+          "src/main/resources/data/among_us/worldgen/placed_feature/cheater_biome_tree.json",
+          "src/main/resources/data/among_us/worldgen/configured_feature/cheater_biome_tree.json",
+          "src/main/resources/data/among_us/worldgen/biome/cheater_biome.json"
         ]
       }
     }
@@ -471,6 +459,8 @@
   ],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.BEDROCK",
+      "~Blocks.FLOWING_LAVA",
       "~Blocks.IRON_BLOCK",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
@@ -479,12 +469,10 @@
   "language_map": {
     "en_us": {
       "item.among_us.imposters_knife": "Imposter\u0027s Knife",
-      "advancements.cheater.descr": "???",
       "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
       "item_group.among_us.among_us_mod": "Among Us Mod",
       "entity.among_us.crewmate": "Crewmate",
       "item.amongus.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
-      "item.among_us.creepy": "Sus Shard?",
       "item.sussy_custom_mob.crewmate_spawn_egg": "Crewmate Spawn Egg",
       "block.amongus.sus_portal_frame": "Sus Portal Frame",
       "advancements.get_imposter_knife.title": "Journey\u0027s End",
@@ -499,7 +487,6 @@
       "entity.among_us.imposter_boss": "Imposter Boss",
       "item.among_us.sus_gem": "Sus Gem",
       "item.sussy_custom_mob.imposter_skeld_spawn_egg": "Imposter Skeld Spawn Egg",
-      "advancements.cheater.title": "???",
       "entity.amongus.crewmate": "Crewmate",
       "entity.amongus.imposter_skeld": "Imposter Skeld",
       "block.amongus.sus_block": "Sus Block",
@@ -524,6 +511,7 @@
       "advancements.enter_sus_lands.descr": "Enter The Skeld Dimention",
       "item.amongus.imposters_knife": "Imposter\u0027s Knife",
       "item.among_us.crewmate_spawn_egg": "Crewmate Spawn Egg",
+      "biome.among_us.cheater_biome": "CHEATER",
       "advancements.kill_crewmate.descr": "Kill a Crewmate and pickup their Sus Shard.",
       "advancements.get_sus_pick.title": "Get Sus Pickaxe",
       "item.among_us_mod.sus_pickaxe": "Sus Pickaxe",

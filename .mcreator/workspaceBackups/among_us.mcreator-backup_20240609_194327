@@ -22,10 +22,11 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imposter_test",
+      "registry_name": "imposter_cheater",
       "metadata": {
         "files": [
           "src/main/java/com/jdloghead/amongus/entity/ImposterEntity.java",
+          "src/main/resources/data/among_us/forge/biome_modifier/imposter_cheater_biome_modifier.json",
           "src/main/java/com/jdloghead/amongus/client/renderer/ImposterRenderer.java"
         ]
       }
@@ -343,6 +344,90 @@
           "src/main/resources/data/among_us/advancements/get_sus_pick.json"
         ]
       }
+    },
+    {
+      "name": "CreepyRightclicked",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creepy_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/com/jdloghead/amongus/procedures/CreepyRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheaterLands",
+      "type": "dimension",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheater_lands",
+      "metadata": {
+        "files": [
+          "src/main/java/com/jdloghead/amongus/world/dimension/CheaterLandsDimension.java",
+          "src/main/resources/data/among_us/dimension/cheater_lands.json",
+          "src/main/resources/data/among_us/dimension_type/cheater_lands.json"
+        ]
+      }
+    },
+    {
+      "name": "CheaterLandsPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheater_lands_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/com/jdloghead/amongus/procedures/CheaterLandsPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheaterBiome",
+      "type": "biome",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheater_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/among_us/worldgen/placed_feature/cheater_biome_tree.json",
+          "src/main/resources/data/among_us/worldgen/configured_feature/cheater_biome_tree.json",
+          "src/main/resources/data/among_us/worldgen/biome/cheater_biome.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -354,25 +439,45 @@
       ],
       "category": "neutral",
       "subtitle": "GETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUTGETOUT"
+    },
+    {
+      "name": "cheater",
+      "files": [
+        "cheater"
+      ],
+      "category": "hostile",
+      "subtitle": "CHEATER"
+    },
+    {
+      "name": "creepymusic",
+      "files": [
+        "music_him"
+      ],
+      "category": "music",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.IRON_BLOCK"
+      "~Blocks.FLOWING_LAVA",
+      "~Blocks.IRON_BLOCK",
+      "~Blocks.DIRT#0",
+      "~Blocks.GRASS"
     ]
   },
   "language_map": {
     "en_us": {
       "item.among_us.imposters_knife": "Imposter\u0027s Knife",
-      "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
       "item_group.among_us.among_us_mod": "Among Us Mod",
+      "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
       "entity.among_us.crewmate": "Crewmate",
       "item.amongus.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
       "item.sussy_custom_mob.crewmate_spawn_egg": "Crewmate Spawn Egg",
       "block.amongus.sus_portal_frame": "Sus Portal Frame",
-      "advancements.get_imposter_knife.title": "Journey\u0027s End",
       "item.among_us_mod.the_skeld": "The Skeld Warp Activater",
+      "advancements.get_imposter_knife.title": "Journey\u0027s End",
       "biome.amongus.sus_lands": "Sus Lands",
+      "entity.among_us.imposter_cheater": "Imposter",
       "item.among_us.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
       "advancements.get_imposter_knife.descr": "Kill an imposter and pick up the Knife.",
       "item.sussy_custom_mob.sus_shard": "Sus Shard",
@@ -391,6 +496,7 @@
       "item.amongus.sus_gem": "Sus Gem",
       "biome.among_us.sus_lands": "Sus Lands",
       "entity.among_us_mod.crewmate": "Crewmate",
+      "subtitles.cheater": "CHEATER",
       "biome.among_us_mod.the_final_biome": "The Final Biome",
       "item.amongus.the_final": "The Final Portal Igniter",
       "item.among_us_mod.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
@@ -400,11 +506,11 @@
       "itemGroup.tabamong_us_mod": "Among Us Mod",
       "advancements.kill_crewmate.title": "They might think your the Imposter!",
       "advancements.enter_sus_lands.title": "Enter the Skeld Dimention",
-      "entity.among_us.imposter_test": "Imposter",
       "biome.sussy_custom_mob.sus_lands": "Sus Lands",
       "advancements.enter_sus_lands.descr": "Enter The Skeld Dimention",
       "item.amongus.imposters_knife": "Imposter\u0027s Knife",
       "item.among_us.crewmate_spawn_egg": "Crewmate Spawn Egg",
+      "biome.among_us.cheater_biome": "CHEATER",
       "advancements.kill_crewmate.descr": "Kill a Crewmate and pickup their Sus Shard.",
       "advancements.get_sus_pick.title": "Get Sus Pickaxe",
       "item.among_us_mod.sus_pickaxe": "Sus Pickaxe",
@@ -436,7 +542,8 @@
       "entity.among_us.imposter_skeld": "Imposter Skeld",
       "biome.amongus.the_final_biome": "The Final Biome",
       "block.sussy_custom_mob.sus_portal_frame": "Sus Portal Frame",
-      "item.sussy_custom_mob.imposter_spawn_egg": "Imposter Spawn Egg"
+      "item.sussy_custom_mob.imposter_spawn_egg": "Imposter Spawn Egg",
+      "subtitles.creepymusic": ""
     }
   },
   "foldersRoot": {

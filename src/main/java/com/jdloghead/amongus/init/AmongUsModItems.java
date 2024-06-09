@@ -18,7 +18,6 @@ import com.jdloghead.amongus.item.SusShardItem;
 import com.jdloghead.amongus.item.SusPickaxeItem;
 import com.jdloghead.amongus.item.SusGemItem;
 import com.jdloghead.amongus.item.ImpostersKnifeItem;
-import com.jdloghead.amongus.item.CreepyItem;
 import com.jdloghead.amongus.AmongUsMod;
 
 public class AmongUsModItems {
@@ -32,7 +31,6 @@ public class AmongUsModItems {
 	public static final RegistryObject<Item> SUS_BLOCK = block(AmongUsModBlocks.SUS_BLOCK);
 	public static final RegistryObject<Item> SUS_PICKAXE = REGISTRY.register("sus_pickaxe", () -> new SusPickaxeItem());
 	public static final RegistryObject<Item> SUS_GEM = REGISTRY.register("sus_gem", () -> new SusGemItem());
-	public static final RegistryObject<Item> CREEPY = REGISTRY.register("creepy", () -> new CreepyItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

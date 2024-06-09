@@ -31,7 +31,6 @@ public class AmongUsModTabs {
 				tabData.accept(AmongUsModBlocks.SUS_BLOCK.get().asItem());
 				tabData.accept(AmongUsModItems.SUS_PICKAXE.get());
 				tabData.accept(AmongUsModItems.SUS_GEM.get());
-				tabData.accept(AmongUsModItems.CREEPY.get());
 			})
 
 					.build());
