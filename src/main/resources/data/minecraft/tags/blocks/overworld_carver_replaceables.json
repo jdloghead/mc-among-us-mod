@@ -2,7 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:bedrock",
-    "minecraft:lava",
+    "minecraft:obsidian",
+    "minecraft:water",
     "minecraft:iron_block",
     "minecraft:dirt",
     "minecraft:grass_block"

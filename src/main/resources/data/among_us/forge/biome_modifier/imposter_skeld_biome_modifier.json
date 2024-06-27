@@ -1,6 +1,9 @@
 {
   "type": "forge:add_spawns",
-  "biomes": "among_us:sus_lands",
+  "biomes": [
+    "among_us:sus_lands",
+    "plains"
+  ],
   "spawners": {
     "type": "among_us:imposter_skeld",
     "weight": 20,

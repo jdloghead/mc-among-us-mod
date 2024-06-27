@@ -3,6 +3,10 @@
   "temperature": 0,
   "downfall": 0.5,
   "effects": {
+    "additions_sound": {
+      "sound": "among_us:creepymusic",
+      "tick_chance": 0.0111
+    },
     "foliage_color": -65536,
     "grass_color": -65536,
     "sky_color": -65536,

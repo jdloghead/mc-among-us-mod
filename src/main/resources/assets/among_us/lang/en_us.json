@@ -1,13 +1,13 @@
 {
   "item.among_us.imposters_knife": "Imposter\u0027s Knife",
-  "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
   "item_group.among_us.among_us_mod": "Among Us Mod",
+  "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
   "entity.among_us.crewmate": "Crewmate",
   "item.amongus.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
   "item.sussy_custom_mob.crewmate_spawn_egg": "Crewmate Spawn Egg",
   "block.amongus.sus_portal_frame": "Sus Portal Frame",
-  "advancements.get_imposter_knife.title": "Journey\u0027s End",
   "item.among_us_mod.the_skeld": "The Skeld Warp Activater",
+  "advancements.get_imposter_knife.title": "Journey\u0027s End",
   "biome.amongus.sus_lands": "Sus Lands",
   "entity.among_us.imposter_cheater": "Imposter",
   "item.among_us.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
@@ -74,6 +74,8 @@
   "entity.among_us.imposter_skeld": "Imposter Skeld",
   "biome.amongus.the_final_biome": "The Final Biome",
   "block.sussy_custom_mob.sus_portal_frame": "Sus Portal Frame",
+  "gamerule.cheatingAllowed": "Cheating Allowed",
+  "gamerule.cheatingAllowed.description": "Allowes Commands to be ran.",
   "item.sussy_custom_mob.imposter_spawn_egg": "Imposter Spawn Egg",
   "subtitles.creepymusic": ""
 }

@@ -40,7 +40,7 @@
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "igniter",
+    "texture": "finaligniter",
     "portalTexture": "amogusportal",
     "enablePortal": true
   }
