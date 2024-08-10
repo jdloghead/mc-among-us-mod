@@ -7,6 +7,7 @@ import sus.jdloghead.amongus.init.AmongUsModBlocks;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
@@ -96,6 +97,7 @@ public class ImposterSkeldEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(AmongUsModEntities.IMPOSTER_SKELD.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
+		DungeonHooks.addDungeonMob(AmongUsModEntities.IMPOSTER_SKELD.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

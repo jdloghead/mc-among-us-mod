@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Imposter",
@@ -35,9 +35,11 @@
       "value": -13369396,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:AmongUsMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AmongUsMod"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
@@ -139,6 +141,15 @@
         "value": "CUSTOM:CheaterBiome"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": false,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

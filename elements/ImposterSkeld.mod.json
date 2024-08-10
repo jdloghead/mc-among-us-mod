@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "livingentity",
   "definition": {
     "mobName": "Imposter Skeld",
@@ -35,9 +35,11 @@
       "value": -13369396,
       "falpha": 0.0
     },
-    "creativeTab": {
-      "value": "CUSTOM:AmongUsMod"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AmongUsMod"
+      }
+    ],
     "isBoss": false,
     "bossBarColor": "RED",
     "bossBarType": "PROGRESS",
@@ -114,6 +116,9 @@
     "stepSound": {
       "value": "block.amethyst_block.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
@@ -142,6 +147,15 @@
         "value": "plains"
       }
     ],
-    "spawnInDungeons": false
+    "spawnInDungeons": true,
+    "raidSpawnsCount": [
+      4,
+      3,
+      3,
+      4,
+      4,
+      4,
+      2
+    ]
   }
 }

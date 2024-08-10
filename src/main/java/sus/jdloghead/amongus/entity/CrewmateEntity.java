@@ -7,6 +7,7 @@ import sus.jdloghead.amongus.init.AmongUsModEntities;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
@@ -101,6 +102,7 @@ public class CrewmateEntity extends PathfinderMob {
 	public static void init() {
 		SpawnPlacements.register(AmongUsModEntities.CREWMATE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8));
+		DungeonHooks.addDungeonMob(AmongUsModEntities.CREWMATE.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

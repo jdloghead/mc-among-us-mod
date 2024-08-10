@@ -12,7 +12,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -67,12 +69,14 @@ public class ImposterBossEntity extends Monster {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, CrewmateEntity.class, true, false));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ImposterBossEntity.class, true, false));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, true, false));
-		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, EnderDragon.class, true, false));
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Villager.class, true, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, CrewmateEntity.class, true, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, ImposterBossEntity.class, true, false));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, true, false));
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(9, new FloatGoal(this));
 	}
 
 	@Override
