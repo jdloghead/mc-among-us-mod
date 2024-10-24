@@ -8,10 +8,10 @@
       "registry_name": "crewmate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/among_us/models/item/crewmate_spawn_egg.json",
-          "src/main/resources/data/among_us/forge/biome_modifier/crewmate_biome_modifier.json",
           "src/main/java/sus/jdloghead/amongus/client/renderer/CrewmateRenderer.java",
-          "src/main/java/sus/jdloghead/amongus/entity/CrewmateEntity.java"
+          "src/main/resources/assets/among_us/models/item/crewmate_spawn_egg.json",
+          "src/main/java/sus/jdloghead/amongus/entity/CrewmateEntity.java",
+          "src/main/resources/data/among_us/forge/biome_modifier/crewmate_biome_modifier.json"
         ]
       }
     },
@@ -23,9 +23,9 @@
       "registry_name": "imposter_cheater",
       "metadata": {
         "files": [
-          "src/main/resources/data/among_us/forge/biome_modifier/imposter_cheater_biome_modifier.json",
+          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterRenderer.java",
           "src/main/java/sus/jdloghead/amongus/entity/ImposterEntity.java",
-          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterRenderer.java"
+          "src/main/resources/data/among_us/forge/biome_modifier/imposter_cheater_biome_modifier.json"
         ]
       }
     },
@@ -38,17 +38,17 @@
       "metadata": {
         "ep": true,
         "files": [
-          "src/main/java/sus/jdloghead/amongus/world/teleporter/TheSkeldTeleporter.java",
-          "src/main/java/sus/jdloghead/amongus/world/dimension/TheSkeldDimension.java",
-          "src/main/resources/assets/among_us/blockstates/the_skeld_portal.json",
-          "src/main/java/sus/jdloghead/amongus/item/TheSkeldItem.java",
           "src/main/resources/assets/among_us/models/block/the_skeld_portal_ns.json",
-          "src/main/java/sus/jdloghead/amongus/world/teleporter/TheSkeldPortalShape.java",
-          "src/main/resources/assets/among_us/models/block/the_skeld_portal_ew.json",
-          "src/main/java/sus/jdloghead/amongus/block/TheSkeldPortalBlock.java",
-          "src/main/resources/data/among_us/dimension/the_skeld.json",
+          "src/main/java/sus/jdloghead/amongus/world/teleporter/TheSkeldTeleporter.java",
           "src/main/resources/data/among_us/dimension_type/the_skeld.json",
-          "src/main/resources/assets/among_us/models/item/the_skeld.json"
+          "src/main/resources/data/among_us/dimension/the_skeld.json",
+          "src/main/resources/assets/among_us/models/block/the_skeld_portal_ew.json",
+          "src/main/resources/assets/among_us/models/item/the_skeld.json",
+          "src/main/java/sus/jdloghead/amongus/world/dimension/TheSkeldDimension.java",
+          "src/main/java/sus/jdloghead/amongus/world/teleporter/TheSkeldPortalShape.java",
+          "src/main/resources/assets/among_us/blockstates/the_skeld_portal.json",
+          "src/main/java/sus/jdloghead/amongus/block/TheSkeldPortalBlock.java",
+          "src/main/java/sus/jdloghead/amongus/item/TheSkeldItem.java"
         ]
       }
     },
@@ -73,9 +73,9 @@
       "registry_name": "sus_lands",
       "metadata": {
         "files": [
+          "src/main/resources/data/among_us/worldgen/configured_feature/sus_lands_tree.json",
           "src/main/resources/data/among_us/worldgen/placed_feature/sus_lands_tree.json",
-          "src/main/resources/data/among_us/worldgen/biome/sus_lands.json",
-          "src/main/resources/data/among_us/worldgen/configured_feature/sus_lands_tree.json"
+          "src/main/resources/data/among_us/worldgen/biome/sus_lands.json"
         ]
       }
     },
@@ -87,8 +87,8 @@
       "registry_name": "sus_shard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/among_us/models/item/sus_shard.json",
-          "src/main/java/sus/jdloghead/amongus/item/SusShardItem.java"
+          "src/main/java/sus/jdloghead/amongus/item/SusShardItem.java",
+          "src/main/resources/assets/among_us/models/item/sus_shard.json"
         ]
       }
     },
@@ -112,9 +112,9 @@
       "registry_name": "imposter_skeld",
       "metadata": {
         "files": [
-          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterSkeldRenderer.java",
+          "src/main/java/sus/jdloghead/amongus/entity/ImposterSkeldEntity.java",
           "src/main/resources/data/among_us/forge/biome_modifier/imposter_skeld_biome_modifier.json",
-          "src/main/java/sus/jdloghead/amongus/entity/ImposterSkeldEntity.java"
+          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterSkeldRenderer.java"
         ]
       }
     },
@@ -136,11 +136,11 @@
       "registry_name": "sus_portal_frame",
       "metadata": {
         "files": [
-          "src/main/resources/assets/among_us/blockstates/sus_portal_frame.json",
-          "src/main/resources/data/among_us/loot_tables/blocks/sus_portal_frame.json",
-          "src/main/java/sus/jdloghead/amongus/block/SusPortalFrameBlock.java",
           "src/main/resources/assets/among_us/models/item/sus_portal_frame.json",
-          "src/main/resources/assets/among_us/models/block/sus_portal_frame.json"
+          "src/main/resources/data/among_us/loot_tables/blocks/sus_portal_frame.json",
+          "src/main/resources/assets/among_us/blockstates/sus_portal_frame.json",
+          "src/main/resources/assets/among_us/models/block/sus_portal_frame.json",
+          "src/main/java/sus/jdloghead/amongus/block/SusPortalFrameBlock.java"
         ]
       }
     },
@@ -176,9 +176,9 @@
       "registry_name": "imposter_boss",
       "metadata": {
         "files": [
+          "src/main/java/sus/jdloghead/amongus/entity/ImposterBossEntity.java",
           "src/main/resources/assets/among_us/models/item/imposter_boss_spawn_egg.json",
-          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterBossRenderer.java",
-          "src/main/java/sus/jdloghead/amongus/entity/ImposterBossEntity.java"
+          "src/main/java/sus/jdloghead/amongus/client/renderer/ImposterBossRenderer.java"
         ]
       }
     },
@@ -214,11 +214,11 @@
       "registry_name": "sus_block",
       "metadata": {
         "files": [
-          "src/main/java/sus/jdloghead/amongus/block/SusBlockBlock.java",
-          "src/main/resources/assets/among_us/blockstates/sus_block.json",
           "src/main/resources/assets/among_us/models/item/sus_block.json",
+          "src/main/resources/assets/among_us/blockstates/sus_block.json",
+          "src/main/resources/data/among_us/loot_tables/blocks/sus_block.json",
           "src/main/resources/assets/among_us/models/block/sus_block.json",
-          "src/main/resources/data/among_us/loot_tables/blocks/sus_block.json"
+          "src/main/java/sus/jdloghead/amongus/block/SusBlockBlock.java"
         ]
       }
     },
@@ -242,8 +242,8 @@
       "registry_name": "sus_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/among_us/models/item/sus_pickaxe.json",
-          "src/main/java/sus/jdloghead/amongus/item/SusPickaxeItem.java"
+          "src/main/java/sus/jdloghead/amongus/item/SusPickaxeItem.java",
+          "src/main/resources/assets/among_us/models/item/sus_pickaxe.json"
         ]
       }
     },
@@ -255,8 +255,8 @@
       "registry_name": "sus_gem",
       "metadata": {
         "files": [
-          "src/main/java/sus/jdloghead/amongus/item/SusGemItem.java",
-          "src/main/resources/assets/among_us/models/item/sus_gem.json"
+          "src/main/resources/assets/among_us/models/item/sus_gem.json",
+          "src/main/java/sus/jdloghead/amongus/item/SusGemItem.java"
         ]
       }
     },
@@ -329,9 +329,9 @@
       "registry_name": "cheater_lands",
       "metadata": {
         "files": [
-          "src/main/java/sus/jdloghead/amongus/world/dimension/CheaterLandsDimension.java",
           "src/main/resources/data/among_us/dimension/cheater_lands.json",
-          "src/main/resources/data/among_us/dimension_type/cheater_lands.json"
+          "src/main/resources/data/among_us/dimension_type/cheater_lands.json",
+          "src/main/java/sus/jdloghead/amongus/world/dimension/CheaterLandsDimension.java"
         ]
       }
     },
@@ -377,9 +377,9 @@
       "registry_name": "cheater_biome",
       "metadata": {
         "files": [
-          "src/main/resources/data/among_us/worldgen/placed_feature/cheater_biome_tree.json",
           "src/main/resources/data/among_us/worldgen/configured_feature/cheater_biome_tree.json",
-          "src/main/resources/data/among_us/worldgen/biome/cheater_biome.json"
+          "src/main/resources/data/among_us/worldgen/biome/cheater_biome.json",
+          "src/main/resources/data/among_us/worldgen/placed_feature/cheater_biome_tree.json"
         ]
       }
     },
@@ -464,14 +464,14 @@
   "language_map": {
     "en_us": {
       "item.among_us.imposters_knife": "Imposter\u0027s Knife",
-      "item_group.among_us.among_us_mod": "Among Us Mod",
       "entity.sussy_custom_mob.imposter_skeld": "Imposter Skeld",
+      "item_group.among_us.among_us_mod": "Among Us Mod",
       "entity.among_us.crewmate": "Crewmate",
       "item.amongus.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
       "item.sussy_custom_mob.crewmate_spawn_egg": "Crewmate Spawn Egg",
       "block.amongus.sus_portal_frame": "Sus Portal Frame",
-      "item.among_us_mod.the_skeld": "The Skeld Warp Activater",
       "advancements.get_imposter_knife.title": "Journey\u0027s End",
+      "item.among_us_mod.the_skeld": "The Skeld Warp Activater",
       "biome.amongus.sus_lands": "Sus Lands",
       "entity.among_us.imposter_cheater": "Imposter",
       "item.among_us.imposter_boss_spawn_egg": "Imposter Boss Spawn Egg",
@@ -566,5 +566,5 @@
     "credits": "jdloghead",
     "modElementsPackage": "sus.jdloghead.amongus"
   },
-  "mcreatorVersion": 202400229712
+  "mcreatorVersion": 202400232117
 }
