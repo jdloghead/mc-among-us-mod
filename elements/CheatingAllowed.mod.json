@@ -1,11 +1,11 @@
 {
-  "_fv": 66,
+  "_fv": 73,
   "_type": "gamerule",
   "definition": {
     "type": "Logic",
     "displayName": "Cheating Allowed",
-    "description": "Allowes Commands to be ran.",
-    "category": "MISC",
+    "description": "Allows Commands to be ran.",
+    "category": "PLAYER",
     "defaultValueLogic": false,
     "defaultValueNumber": 0
   }

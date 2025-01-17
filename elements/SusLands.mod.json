@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Sus Lands",
@@ -13,6 +13,10 @@
       "value": "Blocks.FLOWING_LAVA"
     },
     "airColor": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -65536,
       "falpha": 0.0
     },

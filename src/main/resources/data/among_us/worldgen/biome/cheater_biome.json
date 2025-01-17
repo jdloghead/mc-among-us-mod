@@ -19,7 +19,7 @@
     "creature": [],
     "ambient": [
       {
-        "type": "among_us:imposter_cheater",
+        "type": "among_us:imposter",
         "weight": 50,
         "minCount": 4,
         "maxCount": 10

@@ -1,9 +1,9 @@
 {
-  "_fv": 66,
+  "_fv": 73,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Imposter",
-    "mobLabel": "§kImposter",
+    "mobName": "Imposter Skeld",
+    "mobLabel": "Imposter",
     "mobModelName": "Creeper",
     "mobModelTexture": "imposter.png",
     "transparentModelCondition": {
@@ -22,11 +22,12 @@
       "fixedValue": 1.0
     },
     "modelLayers": [],
+    "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.7,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -65536,
       "falpha": 0.0
@@ -63,15 +64,15 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 1,
-    "attackKnockback": 10.0,
-    "knockbackResistance": 0.0,
+    "attackStrength": 10,
+    "attackKnockback": 3.0,
+    "knockbackResistance": 100.0,
     "movementSpeed": 0.3,
     "stepHeight": 0.6,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
     "followRange": 16,
-    "health": 1000,
+    "health": 20,
     "xpAmount": 0,
     "waterMob": false,
     "breatheUnderwater": {
@@ -81,7 +82,6 @@
       "fixedValue": true
     },
     "flyingMob": false,
-    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -102,24 +102,27 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:SusBlock"
     },
     "livingSound": {
-      "value": "ambient.cave"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:sus.imposter.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": "block.amethyst_block.step"
     },
+    "raidCelebrationSound": {
+      "value": ""
+    },
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:Crewmate</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -131,17 +134,13 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "ambient",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:CheaterBiome"
-      }
-    ],
-    "spawnInDungeons": false,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [],
+    "spawnInDungeons": true,
     "raidSpawnsCount": [
       4,
       3,

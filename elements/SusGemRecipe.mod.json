@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 73,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -15,25 +15,25 @@
         "value": ""
       },
       {
-        "value": "Blocks.BEACON"
+        "value": "Items.REDSTONE"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.TOTEM_OF_UNDYING"
+        "value": "Items.REDSTONE"
       },
       {
         "value": "Items.DIAMOND"
       },
       {
-        "value": "Items.GOLDEN_APPLE#0"
+        "value": "Items.REDSTONE"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.ENCHANTING_TABLE"
+        "value": "Items.REDSTONE"
       },
       {
         "value": ""

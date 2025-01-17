@@ -4,9 +4,9 @@ license="MIT License"
 
 [[mods]]
 modId="among_us"
-version="1.1.0"
+version="1.0.0"
 displayName="Among Us Mod"
-displayURL="https://mcreator.net"
+displayURL="http://jdloghead.duckdns.org"
 logoFile="logo.png"
 credits="jdloghead"
 authors="jdloghead"

@@ -3,24 +3,15 @@
   "category": "misc",
   "pattern": [
     " a ",
-    "bcd",
-    " e "
+    "aba",
+    " a "
   ],
   "key": {
     "a": {
-      "item": "minecraft:beacon"
+      "item": "minecraft:redstone"
     },
     "b": {
-      "item": "minecraft:totem_of_undying"
-    },
-    "c": {
       "item": "minecraft:diamond"
-    },
-    "d": {
-      "item": "minecraft:golden_apple"
-    },
-    "e": {
-      "item": "minecraft:enchanting_table"
     }
   },
   "result": {

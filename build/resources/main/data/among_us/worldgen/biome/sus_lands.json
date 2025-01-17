@@ -22,7 +22,7 @@
     ],
     "ambient": [
       {
-        "type": "among_us:imposter_skeld",
+        "type": "among_us:deleted_mod_element",
         "weight": 20,
         "minCount": 1,
         "maxCount": 1
